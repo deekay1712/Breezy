@@ -1,9 +1,13 @@
 import discord
 import requests
-from decouple import config
+# from decouple import config
+import os
 
-API_KEY = config('API_KEY')
-TOKEN = config('TOKEN')
+# API_KEY = config('API_KEY')
+# TOKEN = config('TOKEN')
+
+TOKEN = os.environ.get('TOKEN')
+API_KEY = os.environ.get('API_KEY')
 
 client = discord.Client()
 
