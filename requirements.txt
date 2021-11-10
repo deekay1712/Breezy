@@ -1,0 +1,3 @@
+discord.py==1.7.3
+python-decouple==3.5
+requests==2.26.0
